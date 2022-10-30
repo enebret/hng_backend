@@ -4,7 +4,7 @@ const app = express();
 var PORT = 3520;
 
 app.get('/', (req, res) => {
-res.statusCode = 200; 
+res.writeHead(200, { "Content-Type": "application/json" });
 res.json({ slackUsername: 'awsumbret',
 backend: true,
 age: 28,
